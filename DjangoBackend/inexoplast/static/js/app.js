@@ -50,25 +50,25 @@ const SimpleSlider = (sliderId) => {
 SimpleSlider("slider1");
 SimpleSlider("slider2");
 
-var bannerImages = document.querySelectorAll(".banner-image");
-var bannerIndex = 0;
-var bannerTime = 1000;
+// var bannerImages = document.querySelectorAll(".banner-image");
+// var bannerIndex = 0;
+// var bannerTime = 2000;
 
-const changeBannerImage = () => {
-  if (window.innerWidth < 768) {
-    if (bannerIndex != bannerImages.length - 1) {
-      bannerIndex += 1;
-    } else {
-      bannerIndex = 0;
-    }
-    bannerImages.forEach((bannerImage) => {
-      bannerImage.style.display = "none";
-    });
-    bannerImages[bannerIndex].style.display = "block";
-  }
-};
+// const changeBannerImage = () => {
+//   if (window.innerWidth < 768) {
+//     if (bannerIndex != bannerImages.length - 1) {
+//       bannerIndex += 1;
+//     } else {
+//       bannerIndex = 0;
+//     }
+//     bannerImages.forEach((bannerImage) => {
+//       bannerImage.style.display = "none";
+//     });
+//     bannerImages[bannerIndex].style.display = "block";
+//   }
+// };
 
-setInterval(changeBannerImage, bannerTime);
+// setInterval(changeBannerImage, bannerTime);
 
 
 function ResizeImage(src) {

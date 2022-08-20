@@ -93,12 +93,36 @@ nav .contact-number {
     text-decoration: none;
 }
 
-.banner-image:nth-child(1) {
-    margin-left: 50px;
+.banner {
+    position: relative;
+    width: auto;
+    height: 100vh;
 }
 
-.banner-image:nth-child(3) {
-    margin-left: -50px;
+.banner-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    min-height: 450px;
+    max-height: 450px;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.banner-image:hover {
+    transform: scale(1.05);
+}
+
+.banner-image.second-polygon {
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 18% 100%);
+}
+
+.banner-image.first-polygon {
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+.banner-image.third-polygon {
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .text-red {
@@ -581,20 +605,27 @@ footer {
         justify-content: center;
         flex-direction: column;
     }
-    .banner-image {
+    .image-grid {
+        display: flex;
+    }
+    .banner {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        overflow: hidden;
+    }
+    .banner:nth-child(1) {
         display: none;
     }
-    .image-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
     .banner-image {
-        margin: 0;
+        width: 100%;
+        min-height: none;
+        max-height: none;
+        height: auto;
+        position: static;
     }
-    .banner-image:nth-child(1) {
-        display: block;
-        object-fit: contain;
-        width: 100% !important;
-        margin: 0;
+    img {
+        clip-path: none !important;
     }
 }
 
@@ -623,8 +654,9 @@ footer {
         flex-direction: column;
     }
     .contact-btn {
-        height: 40px;
-        font-size: 1em;
+        width: 60%;
+        height: 50px;
+        font-size: 1.1em;
     }
 }
 
@@ -679,7 +711,7 @@ footer {
 
 @media (max-width: 360px) {
     .is-smaller-mobile {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 }
 
