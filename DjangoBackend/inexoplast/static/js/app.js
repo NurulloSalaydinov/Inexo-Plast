@@ -91,3 +91,30 @@ function ResizeImage(src) {
         document.body.removeChild(element);
     };
 };
+
+var bannerIndex = 0;
+var bannerTime = 4200;
+const bannerAnimation = () => {
+  var bannerImages = document.querySelectorAll('.banner-image');
+  var bannerLength = bannerImages.length;
+  if (window.innerWidth < 992) {
+    bannerImages.forEach(bannerImage => {
+      bannerImage.style.opacity = '0';
+      bannerImage.style.zIndex = '-1111';
+    });
+    if (bannerIndex != bannerLength - 1) {
+      bannerIndex += 1;
+    } else {
+      bannerIndex = 0;
+    }
+    bannerImages[bannerIndex].style.opacity = '1';
+    bannerImages[bannerIndex].style.zIndex = '1';
+  } else {
+    bannerImages.forEach(bannerImage => {
+      bannerImage.style.opacity = '1';
+      bannerImage.style.zIndex = 'auto';
+    });
+  }
+};
+
+setInterval(bannerAnimation, bannerTime)
