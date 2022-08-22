@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +9,8 @@
         <title>Inexo Plast</title>
         <meta content="Abdurahmon Rashidov" name="author">
         <meta content="Nurullo Salaydinov" name="author">
-        <link rel="shortcut icon" href="/static/img/favicon.svg" type="image/x-icon">
-        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="shortcut icon" href="{% static 'img/favicon.svg' %}" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
 
     <body>
@@ -17,7 +18,7 @@
         <header>
             <nav class="navbar container">
                 <a href="#" class="navbar-brand">
-                    <img src="/static/img/logo.svg" alt="">
+                    <img src="{% static 'img/logo.svg' %}" alt="">
                 </a>
                 <div class="navbar-links" id="navbarMenu">
                     <a href="#portfolio">PORTFOLIO</a>
@@ -45,13 +46,13 @@
                 </div>
                 <div class="image-grid">
                     <div class="banner">
-                        <img src="/static/img/banner/banner-1.jpg" class="banner-image first-polygon" alt="">
+                        <img src="{% static 'img/banner/banner-1.jpg' %}" class="banner-image first-polygon" alt="">
                     </div>
                     <div class="banner">
-                        <img src="/static/img/banner/banner-3.jpg" class="banner-image second-polygon" alt="">
+                        <img src="{% static 'img/banner/banner-3.jpg' %}" class="banner-image second-polygon" alt="">
                     </div>
                     <div class="banner">
-                        <img src="/static/img/banner/banner-2.jpg" class="banner-image third-polygon" alt="">
+                        <img src="{% static 'img/banner/banner-2.jpg' %}" class="banner-image third-polygon" alt="">
                     </div>
                 </div>
             </div>
@@ -67,7 +68,7 @@
                 <div class="main-grid-3 my-3">
                     <!-- card -->
                     <div class="card">
-                        <img src="/static/img/icon/offer-1.svg" alt="">
+                        <img src="{% static 'img/icon/offer-1.svg' %}" alt="">
                         <h3>Yuqori sifatli xomashyolar</h3>
                         <p>Biz barcha mahsulotlarimizni yuqori sifatli xomashyolardan tayyorlaymiz. Bu o’z navbatida
                             ko’p yillar hizmat qiluvchi mahsulot degani. Mahsulotlarimiz sifati biz uchun barcha
@@ -76,7 +77,7 @@
                     <!-- end card -->
                     <!-- card -->
                     <div class="card">
-                        <img src="/static/img/icon/offer-2.svg" alt="">
+                        <img src="{% static 'img/icon/offer-2.svg' %}" alt="">
                         <h3>Yirik qurilish korxonlari bilan
                             hamkorlik qilamiz</h3>
                         <p>Vodiydagi yirik qurilish korxonalari va ko’p qavatli uylar qurivchi tashkilotlar bilan
@@ -85,7 +86,7 @@
                     <!-- end card -->
                     <!-- card -->
                     <div class="card">
-                        <img src="/static/img/icon/offer-3.svg" alt="">
+                        <img src="{% static 'img/icon/offer-3.svg' %}" alt="">
                         <h3>Hamyonbop narxlar</h3>
                         <p>Mijozlarimiz uchun yuqori sifat bilan bir vaqtni o’zida biz hamyonbop narxlarni taklif
                             qilamiz. Bizning mahsulotlar bozordagi boshqa mahsulotlar narxlaridan arzon va sifat
@@ -94,7 +95,7 @@
                     <!-- end card -->
                     <!-- card -->
                     <div class="card">
-                        <img src="/static/img/icon/offer-4.svg" alt="">
+                        <img src="{% static 'img/icon/offer-4.svg' %}" alt="">
                         <h3>Hamkorlikdagi qulaylik
                             va manfaatlar</h3>
                         <p>Bepul o’rnatilishi kerak bo’lgan deraza romlari uchun ketadigan summani hisoblab beramiz va
@@ -104,7 +105,7 @@
                     <!-- end card -->
                     <!-- card -->
                     <div class="card">
-                        <img src="/static/img/icon/offer-5.svg" alt="">
+                        <img src="{% static 'img/icon/offer-5.svg' %}" alt="">
                         <h3>Faqat sinalgan va tajribali odamlardan iborat jamoa</h3>
                         <p>Profil ishlab chiqarishda va plastik romlar tayyorlashda ko’p yillik tajribaga ega
                             mutaxasislar jamoasi</p>
@@ -112,7 +113,7 @@
                     <!-- end card -->
                     <!-- card -->
                     <div class="card">
-                        <img src="/static/img/icon/offer-6.svg" alt="">
+                        <img src="{% static 'img/icon/offer-6.svg' %}" alt="">
                         <h3>Buyurtmalar o’z vaqtida !</h3>
                         <p>Mijozlar talabi va belgilangan vaqtlarga amal qilish jamoamiz maqsadi hisoblanadi. Biz
                             sizning buyurtmangizni o’z vaqtida bajarilishiga harakat qilamiz</p>
@@ -132,11 +133,11 @@
                                 <div class="slider-wrapper">
 
                                     <div class="slider-slide">
-                                        <img src="/static/img/slider/slider-1-6000.jpg" alt="">
+                                        <img src="{% static 'img/slider/slider-1-6000.jpg' %}" alt="">
                                     </div>
 
                                     <div class="slider-slide">
-                                        <img src="/static/img/slider/slider-2-6000.jpg" alt="">
+                                        <img src="{% static 'img/slider/slider-2-6000.jpg' %}" alt="">
                                     </div>
 
                                 </div>
@@ -192,15 +193,15 @@
                                 <div class="slider-wrapper">
 
                                     <div class="slider-slide">
-                                        <img src="/static/img/slider/slider-1-5200.jpg" alt="">
+                                        <img src="{% static 'img/slider/slider-1-5200.jpg' %}" alt="">
                                     </div>
 
                                     <div class="slider-slide">
-                                        <img src="/static/img/slider/slider-2-5200.jpg" alt="">
+                                        <img src="{% static 'img/slider/slider-2-5200.jpg' %}" alt="">
                                     </div>
 
                                     <div class="slider-slide">
-                                        <img src="/static/img/slider/slider-3-5200.jpg" alt="">
+                                        <img src="{% static 'img/slider/slider-3-5200.jpg' %}" alt="">
                                     </div>
 
                                 </div>
@@ -229,7 +230,7 @@
                 </div>
                 <div class="container offer-wrapper">
                     <div>
-                        <img src="/static/img/large-home.png" width="100%" alt="">
+                        <img src="{% static 'img/large-home.png' %}" width="100%" alt="">
                     </div>
                     <div class="offer-text">
                         <h1 class="text-3xl mobile-hidden">QURUVCHILAR UCHUN MAXSUS TAKLIF</h1>
@@ -253,22 +254,22 @@
                 <div class="mobile-slider" id="mobileSlider">
                     <div class="main-grid-3 my-3" id="mob-wrapper">
                         <div class="image-animation">
-                            <img src="/static/img/home/home-1.png" onclick="ResizeImage(this.src)" width="100%" alt="">
+                            <img src="{% static 'img/home/home-1.png' %}" onclick="ResizeImage(this.src)" width="100%" alt="">
                         </div>
                         <div class="image-animation">
-                            <img src="/static/img/home/home-2.png" onclick="ResizeImage(this.src)" width="100%" alt="">
+                            <img src="{% static 'img/home/home-2.png' %}" onclick="ResizeImage(this.src)" width="100%" alt="">
                         </div>
                         <div class="image-animation">
-                            <img src="/static/img/home/home-3.png" onclick="ResizeImage(this.src)" width="100%" alt="">
+                            <img src="{% static 'img/home/home-3.png' %}" onclick="ResizeImage(this.src)" width="100%" alt="">
                         </div>
                         <div class="image-animation">
-                            <img src="/static/img/home/home-4.png" onclick="ResizeImage(this.src)" width="100%" alt="">
+                            <img src="{% static 'img/home/home-4.png' %}" onclick="ResizeImage(this.src)" width="100%" alt="">
                         </div>
                         <div class="image-animation">
-                            <img src="/static/img/home/home-5.png" onclick="ResizeImage(this.src)" width="100%" alt="">
+                            <img src="{% static 'img/home/home-5.png' %}" onclick="ResizeImage(this.src)" width="100%" alt="">
                         </div>
                         <div class="image-animation">
-                            <img src="/static/img/home/home-6.png" onclick="ResizeImage(this.src)" width="100%" alt="">
+                            <img src="{% static 'img/home/home-6.png' %}" onclick="ResizeImage(this.src)" width="100%" alt="">
                         </div>
                     </div>
                 </div>
@@ -358,7 +359,7 @@
         <footer>
             <div class="container footer-wrapper">
                 <div>
-                    <img src="/static/img/logo.svg" alt="">
+                    <img src="{% static 'img/logo.svg' %}" alt="">
                     <p class="mt-3 is-size-smaller text-gray">Biz har qanday murakkablikdagi deraza romlari uchun
                         plastik profillarni ishlab chiqaramiz</p>
                 </div>
@@ -380,30 +381,30 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <img src="/static/img/icon/telegram.svg" alt="">
+                                <img src="{% static 'img/icon/telegram.svg' %}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="/static/img/icon/whatsapp.svg" alt="">
+                                <img src="{% static 'img/icon/whatsapp.svg' %}" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="/static/img/icon/instagram.svg" alt="">
+                                <img src="{% static 'img/icon/instagram.svg' %}" alt="">
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <img src="/static/img/icon/clock.svg" alt="">
+                    <img src="{% static 'img/icon/clock.svg' %}" alt="">
                     <p class="mt-3">DU-SHAN 08:00-20:00 YAK Dam olish kuni</p>
                 </div>
             </div>
             <center class="mt-3 text-gray">Inexo Plast | Abdurahmon Rashidov 2022</center>
         </footer>
 
-        <script src="/static/js/app.js"></script>
+        <script src="{% static 'js/app.js' %}"></script>
     </body>
 
 </html>
